@@ -1,0 +1,419 @@
+/* edições padrão 
+***************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1em "Trebuchet MS", "Helvetica", sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* / edições padrão ********************/
+
+
+
+/* tamanho máximo padrão 
+*************************/
+div.tamanho-maximo { 
+    width: 940px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+
+/* cabeçalho 
+************************************************/
+header {
+    position: relative;
+    width: 100%;
+    height: 233px;
+    background: url(../img/fundo.png) repeat-x;
+}
+
+/* logo 
+******************************************************/
+div#logo {
+    width: 154px;
+    height: 90px;
+    background: url(../img/logo.png) no-repeat center;
+    position: relative;
+    top: 15px;
+}
+
+div#logo h1 {
+    text-indent: -900000px;
+}
+
+ /* menu mobile 
+    ************************************/
+nav#menu-mobile {
+    display: none;
+}
+
+/* menu header 
+********************************************************/
+nav#menu-header {
+    position: relative;
+    top: 30px;
+    display: inline-block;
+    background-color: #b10333;
+    margin: auto;
+    z-index: 10;
+
+}
+
+nav#menu-header li {
+    display: inline-block;
+}
+
+nav#menu-header li a {
+    display: block;
+    padding: 13px 30px;
+    font-size: 15px;
+    color: #fff;
+    background: url(../img/divisor.png) no-repeat right;
+}
+
+nav#menu-header li a:hover {
+    color: #69001d;
+}
+
+nav#menu-header li a.clicked {
+    background-color: #de003e;
+}
+
+/* mapa brasil 
+*********************************************/
+div#mapa-brasil {
+    width: 176px;
+    height: 179px;
+    background: url(../img/detalhe-topo.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/* box aside lateral, article & section-center 
+**********************************************/
+#aside-left, article, #aside-right, form {
+    margin-top: 15px;
+    padding: 5px;
+    background: url(../img/fundo-caixa.png);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bg_white {
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+} 
+
+/* página de três blocos 
+*********************************/
+aside#aside-left {
+    /* width: 220px; */
+    width: 24.4%;
+    margin-bottom: 10px;
+}
+
+aside#aside-right {
+    /* width: 335px; */
+    width: 36.4%;
+    margin-bottom: 14px;
+}
+
+article {
+    /* width: 330px; */
+    width: 35.9%;
+    margin: 15px;
+    
+}
+
+/* página de dois blocos 
+*********************************/
+article.dois_blocos {
+    width: 660px;
+}
+
+article.dois_blocos a#seta {
+    font-size: 1.7em;
+    padding: 0 20px;
+    position: absolute;
+    top: 45%;
+    right: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.display_none {
+    display: none;
+}
+
+article.noticias-recentes {
+    margin: 15px 0;
+}
+
+/* formulário email
+*******************************/
+form {
+    width: 220px;
+    height: 145px;
+}
+
+label {
+    display: inline-block;
+    padding: 5px 0;
+    margin-left: 5px;
+}
+
+input {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+input[type="submit"] {
+    margin: 10px 0 5px 5px ;
+    background-color: #b10333;
+    border: 1px solid #870529;
+    color: #fff;
+}
+
+
+/* Edições da escrita 
+**********************************/
+h2 {
+    background-color: #294c71;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 1em;
+    padding: 3px;
+    display: inline-block;
+    background-color: #b10333;
+    color: #fff;
+    margin: 5px 0 0 5px;
+}
+
+p {
+    padding: 0 5px;
+}
+
+a.link_format {
+    color: #b10333;
+    text-decoration: underline;
+}
+
+/* imagem */
+article img, aside img {
+    width: 97.3%;
+    margin: 0 5px;
+    border: 3px solid #dfdfdf   ;
+}
+
+/* Listas de Entrevistas 
+**********************************************************************/
+aside ul li a {
+    display: block;
+    background-color: #fff;
+    padding: 12px 0;
+    text-indent: 8px;
+    font-size: .9em;
+    color: #000;
+}
+
+aside ul li a:hover {
+    background: #fff url(../img/marcador.png) no-repeat center left;
+    text-indent: 20px;
+    color: #a1a1a1;
+}
+
+/* Lista das notícias 
+******************************************/
+ul.lista-de-noticias li {
+    padding: 5px 0;
+    display: inline-block;
+}
+
+ul.lista-de-noticias li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+ul.lista-de-noticias li span.title {
+    color: #3e7ab9;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+ul.lista-de-noticias li span {
+    font-size: .8em;
+    color: #000;
+}
+
+ul.lista-de-noticias li img {
+    width: 85px;
+    border: none;
+    height: 58px;
+    float: left;
+}
+
+/* cabeçalho 
+*********************************/
+footer {
+    padding: 20px;
+    background-color: #294c71;
+    text-align: center;
+    color: #fff;
+}
+
+/********************************************************************** 
+***********************************************************************/
+
+@media only screen and (max-width: 960px) {
+    /* tamanho maximo */
+    div.tamanho-maximo {
+        width: 100%;
+        padding: 5px;
+    }
+    /* / tamanho maximo */
+
+    /* cabeçalho 
+    ************************************************/
+    header {
+        position: relative;
+        width: 100%;
+        height: 170px;
+        background: url(../img/fundo.png) repeat-x bottom;
+    }
+
+    /* menu header 
+    ********************************************************/
+    nav#menu-header {
+        display: none;
+
+    }
+
+    /* menu mobile 
+    ************************************/
+    nav#menu-mobile {
+        position: relative;
+        top: -30px;
+        z-index: 2000;
+        display: block;
+    }
+
+    nav#menu-mobile ul {
+        padding: 5px;
+        display: none;
+        background-color: #fff;
+    }
+
+    nav#menu-mobile li a.clicked {
+        background-color: #de003e;
+    }
+
+    nav#menu-mobile ul li a {
+        background-color: #b10333;
+        border: 1px solid;
+        padding: 10px 20px;
+        text-align: center;
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    #link-menu {
+        display: block;
+    }
+
+    /* logo 
+    ******************************************************/
+    div#logo {
+        display: block;
+        margin: auto;
+        z-index: 20;
+    }
+
+    /* mapa brasil 
+    *********************************************/
+    div#mapa-brasil {
+        width: 100px;
+        height: 100px;
+        background: url(../img/detalhe-topo.png);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: 33%;
+        z-index: 0;
+    }
+
+    /* página de três blocos 
+    *********************************/
+    aside#aside-left {
+        display: none;
+    }
+
+    article, aside#aside-right {
+        width: 330px;
+    }
+
+    /* formulário email
+    *******************************/
+    form {
+        width: 660px;
+        height: 145px;
+        text-align: center;
+    }
+
+    input[type="text"] {
+        width: 500px;
+    }
+}
+
+/********************************************************************** 
+***********************************************************************/
+
+@media only screen and (max-width: 716px) {
+    /* página de três blocos 
+    *********************************/
+    aside#aside-left {
+        display: none;
+    }
+
+    article, aside#aside-right {
+        width: 95%;
+    }
+
+    /* formulário email
+    *******************************/
+    form {
+        width: 95%;
+        height: 145px;
+        text-align: center;
+    }
+
+    input[type="text"] {
+        width: 50%;
+    }
+}
